@@ -25,8 +25,13 @@ sudo dpkg -i mysql-apt-config_0.8.10-1_all.deb
 sudo apt-key adv --keyserver keys.gnupg.net --recv-keys 8C718D3B5072E1F5
 
 apt install mysql-server mysql-client
-printf "\033c"
 
+printf "\033c"
+echo "Installing pip & pymysql..."
+sudo apt install python-pip
+sudo pip install pymysql
+
+printf "\033c"
 while true; do
     read -p "Run mysql secure installation? [Y/n] " yn
     case $yn in
