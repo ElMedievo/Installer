@@ -30,6 +30,7 @@ printf "\033c"
 echo "Installing pip & pymysql..."
 sudo apt install python-pip
 sudo pip install pymysql
+sudo apt-get install python-mysqldb
 
 printf "\033c"
 while true; do
