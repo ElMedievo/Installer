@@ -5,7 +5,7 @@ Please note this script has been created and tested on Ubuntu 18.04 (The version
 ## Usage
 First of all, clone this repo on any directory of your desire, and navigate into it.
 
-  > `cd Installer`
+  > `cd Installer/`
 
 Then, just run the `setup.sh` and everything from that point on should be pretty straight forward and somewhat friendly.
 
