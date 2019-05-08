@@ -1,6 +1,6 @@
 # Installer
 This installer will set a server instance up for you. Just answer everything it requieres along the installation and you should be good to go.
-This script has been created and tested on Ubuntu 18.04 (The version the official medieval server runs on), so there is absolutely no warranty it'll work on outdated nor versions above the previously mentioned one.
+Please note this script has been created and tested on Ubuntu 18.04 (The version the official medieval server runs on), so there is absolutely no warranty it'll work on outdated nor versions above the previously mentioned one.
 
 ## Usage
 First of all, clone this repo on any directory of your desire, and navigate into it.
