@@ -25,7 +25,6 @@ sudo dpkg -i mysql-apt-config_0.8.10-1_all.deb
 sudo apt-key adv --keyserver keys.gnupg.net --recv-keys 8C718D3B5072E1F5
 
 apt install mysql-server mysql-client
-read -p "> " input
 printf "\033c"
 
 while true; do
