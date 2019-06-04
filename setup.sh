@@ -58,7 +58,7 @@ while true; do
     esac
 done
 
-ln -s /usr/share/phpmyadmin/ /var/www/phpmyadmin
+ln -s /usr/share/phpmyadmin/ /var/www/html/phpmyadmin
 
 php -f database.php
 
