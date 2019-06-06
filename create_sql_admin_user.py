@@ -12,11 +12,10 @@ cursor = database.cursor()
 print("--- New SQL Admin User ---")
 user = raw_input("<- New SQL Username: ")
 password = raw_input("<- User's pass: ")
-host = raw_input("<- Allow connections from: ")
 print("--------------------------")
 
-create_user_sql = "CREATE USER '" + user + "'@'" + host + "' IDENTIFIED BY '" + password + "';"
-grant_perms_sql = "GRANT ALL PRIVILEGES ON * . * TO '" + user + "'@'" + host + "';"
+create_user_sql = "CREATE USER '" + user + "'@'" + "' IDENTIFIED BY '" + password + "';"
+grant_perms_sql = "GRANT ALL PRIVILEGES ON * . * TO '" + user + "'@'""';"
 
 cursor.execute(create_user_sql)
 cursor.execute(grant_perms_sql)
