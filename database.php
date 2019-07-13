@@ -7,13 +7,8 @@
 
 	$conn = new mysqli($servername, $username, $password);
 
-	while ($conn->connect_error) {
-	    echo "---------- SQL Info ---------". "\xA";
-		$servername = readline("<- Host: ");
-		$username = readline("<- Username: ");
-		$password = readline("<- Password: ");
-		echo "-----------------------------". "\xA";
-		$conn = new mysqli($servername, $username, $password);
+	if ($conn->connect_error) {
+	    die("Connection failed: " . $conn->connect_error);
 	}
 
 	echo "---------- Medievo ---------" . "\xA";
@@ -71,17 +66,17 @@
 			`gold_ingot` INT NOT NULL , 
 			`gold_nugget` INT NOT NULL , 
 			`golden_carrot` INT NOT NULL , 
-			`gold_barding` INT NOT NULL , 
+			`golden_horse_armor` INT NOT NULL , 
 			`gold_block` INT NOT NULL , 
-			`gold_sword` INT NOT NULL , 
-			`gold_spade` INT NOT NULL , 
-			`gold_pickaxe` INT NOT NULL , 
-			`gold_axe` INT NOT NULL , 
-			`gold_hoe` INT NOT NULL , 
-			`gold_helmet` INT NOT NULL , 
-			`gold_chestplate` INT NOT NULL , 
-			`gold_leggings` INT NOT NULL , 
-			`gold_boots` INT NOT NULL , 
+			`golden_sword` INT NOT NULL , 
+			`golden_shovel` INT NOT NULL , 
+			`golden_pickaxe` INT NOT NULL , 
+			`golden_axe` INT NOT NULL , 
+			`golden_hoe` INT NOT NULL , 
+			`golden_helmet` INT NOT NULL , 
+			`golden_chestplate` INT NOT NULL , 
+			`golden_leggings` INT NOT NULL , 
+			`golden_boots` INT NOT NULL , 
 			`golden_apple` INT NOT NULL , 
 			`alfonsos` INT NOT NULL 
 			) 
